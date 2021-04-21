@@ -16,17 +16,10 @@ jobs:
           channel: 'dev'
       - run: flutter config --enable-web
       - run: flutter pub get
-<<<<<<< HEAD
       - run: flutter build web --release
         working-directory: . /flutter_page/lib/main.dart
       - run: 
           cd ./flutter_page/build/web
-=======
-      - run: flutter build web --
-        working-directory: ./lib/main.dart
-      - run: 
-          cd ./build/web
->>>>>>> 684a448c00ae5ae47192b0645231eddb378a6df2
           git init
           git config --global user.email limemoon@kakao.com
           git config --global user.name LimeMoon
@@ -35,8 +28,4 @@ jobs:
           git checkout -b gh-pages
           git add --all
           git commit -m "update"
-<<<<<<< HEAD
           git push origin gh-pages -f
-=======
-          git push origin gh-pages -f
->>>>>>> 684a448c00ae5ae47192b0645231eddb378a6df2
