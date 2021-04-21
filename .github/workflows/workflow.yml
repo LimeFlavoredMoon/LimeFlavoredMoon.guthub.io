@@ -17,7 +17,7 @@ jobs:
       - run: flutter config --enable-web
       - run: flutter pub get
       - run: flutter build web --release
-        working-directory: . /flutter_page/lib/main.dart
+        working-directory: ./flutter_page/lib/main.dart
       - run: 
           cd ./flutter_page/build/web
           git init
